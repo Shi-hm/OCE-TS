@@ -75,13 +75,12 @@ MyLinear/
 
 ## 📊 Results
 
-OCE-TS consistently outperforms strong baselines such as
-<img width="647" height="402" alt="image" src="https://github.com/user-attachments/assets/278b4fb3-a9cb-40aa-9eb7-5a27994b3447" />
+Our method (OCE-TS) consistently outperforms strong baselines such as  
+Autoformer, DLinear, iTransformer, TimeXer, and TimeBridge across multiple datasets.
 
+For detailed experimental results, tables, and comparisons,  
+**please refer to the paper**.
 
-More results can be found in the paper.
-
----
 
 ## 📚 Citation
 
