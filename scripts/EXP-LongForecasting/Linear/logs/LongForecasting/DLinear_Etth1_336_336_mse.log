@@ -1,0 +1,4 @@
+Args in experiment:
+Namespace(batch_size=32, checkpoints='./checkpoints/', data='ETTh1', data_path='ETTh1.csv', des='Exp', do_predict=False, enc_in=7, features='M', gpu=0, individual=False, is_training=1, itr=1, learning_rate=0.005, lradj='type1', model='DLinear', model_id='ETTh1_336_336', moving_avg=25, my_loss='mse', patience=5, pred_len=336, root_path='./dataset/ETT/', seq_len=336, target='OT', test_flop=False, train_epochs=15, train_only=False, use_gpu=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_336_336_DLinear_ETTh1_ftM_sl336_pl336_lossmse_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
