@@ -1,0 +1,8 @@
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', data='custom', data_path='electricity.csv', des='Exp', do_predict=False, enc_in=321, features='M', gpu=0, individual=False, is_training=1, itr=3, learning_rate=0.001, lradj='type1', model='DLinear', model_id='Electricity_336_720', moving_avg=25, my_loss='Ordinal_CrossEntropy_Loss', num_bins=100, patience=5, pred_len=720, root_path='./dataset/', seq_len=336, sigma=0.01, target='OT', test_flop=False, train_epochs=15, train_only=False, use_gpu=True)
+Use GPU: cuda:0
+>>>>>>>start training : Electricity_336_720_DLinear_custom_ftM_sl336_pl720_sigma0.01_bins100_lossOrdinal_CrossEntropy_Loss_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17357
+val 1913
+>>> Start Training
+[0m

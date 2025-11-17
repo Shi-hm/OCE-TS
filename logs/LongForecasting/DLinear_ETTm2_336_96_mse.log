@@ -1,0 +1,11 @@
+Args in experiment:
+Namespace(batch_size=32, checkpoints='./checkpoints/', data='ETTm2', data_path='ETTm2.csv', des='Exp', do_predict=False, enc_in=7, features='M', gpu=0, individual=False, is_training=1, itr=5, learning_rate=0.001, lradj='type1', model='DLinear', model_id='ETTm2_336_96', moving_avg=25, my_loss='mse', num_bins=100, patience=5, pred_len=96, root_path='./dataset/ETT/', seq_len=336, sigma=0.01, target='OT', test_flop=False, train_epochs=10, train_only=False, use_gpu=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTm2_336_96_DLinear_ETTm2_ftM_sl336_pl96_sigma0.01_bins100_lossmse_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 34129
+val 11425
+>>> Start Training
+Epoch: 1, Steps: 1066, Train Loss: 39.23328, Time: 35.81s
+Validation loss decreased (inf --> 43.188572).  Saving model ...
+Epoch: 2, Steps: 1066, Train Loss: 37.93356, Time: 37.35s
+EarlyStopping counter: 1 out of 5

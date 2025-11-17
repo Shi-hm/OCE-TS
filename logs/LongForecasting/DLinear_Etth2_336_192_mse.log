@@ -1,0 +1,533 @@
+Args in experiment:
+Namespace(batch_size=32, checkpoints='./checkpoints/', data='ETTh2', data_path='ETTh2.csv', des='Exp', do_predict=False, enc_in=7, features='M', gpu=0, individual=False, is_training=1, itr=5, learning_rate=0.005, lradj='type1', model='DLinear', model_id='ETTh2_336_192', moving_avg=25, my_loss='mse', num_bins=100, patience=5, pred_len=192, root_path='./dataset/ETT/', seq_len=336, sigma=0.01, target='OT', test_flop=False, train_epochs=15, train_only=False, use_gpu=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2689
+>>> Start Training
+Epoch: 1, Steps: 253, Train Loss: 40.82986, Time: 21.04s
+Validation loss decreased (inf --> 40.715000).  Saving model ...
+Epoch: 2, Steps: 253, Train Loss: 39.48097, Time: 21.85s
+EarlyStopping counter: 1 out of 5
+Epoch: 3, Steps: 253, Train Loss: 38.44334, Time: 21.78s
+EarlyStopping counter: 2 out of 5
+Epoch: 4, Steps: 253, Train Loss: 37.53020, Time: 22.14s
+EarlyStopping counter: 3 out of 5
+Epoch: 5, Steps: 253, Train Loss: 36.65100, Time: 22.18s
+EarlyStopping counter: 4 out of 5
+Epoch: 6, Steps: 253, Train Loss: 35.94022, Time: 22.35s
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+batch 0 y → probs → restore MSE: 0.000002
+batch 1 y → probs → restore MSE: 0.000011
+batch 2 y → probs → restore MSE: 0.000019
+batch 3 y → probs → restore MSE: 0.000019
+batch 4 y → probs → restore MSE: 0.000019
+batch 5 y → probs → restore MSE: 0.000019
+batch 6 y → probs → restore MSE: 0.000019
+batch 7 y → probs → restore MSE: 0.000019
+batch 8 y → probs → restore MSE: 0.000019
+batch 9 y → probs → restore MSE: 0.000019
+batch 10 y → probs → restore MSE: 0.000003
+batch 11 y → probs → restore MSE: 0.000002
+batch 12 y → probs → restore MSE: 0.000002
+batch 13 y → probs → restore MSE: 0.000002
+batch 14 y → probs → restore MSE: 0.000002
+batch 15 y → probs → restore MSE: 0.000002
+batch 16 y → probs → restore MSE: 0.000014
+batch 17 y → probs → restore MSE: 0.000013
+batch 18 y → probs → restore MSE: 0.000002
+batch 19 y → probs → restore MSE: 0.000002
+batch 20 y → probs → restore MSE: 0.000011
+batch 21 y → probs → restore MSE: 0.000001
+batch 22 y → probs → restore MSE: 0.000001
+batch 23 y → probs → restore MSE: 0.000006
+batch 24 y → probs → restore MSE: 0.000016
+batch 25 y → probs → restore MSE: 0.000016
+batch 26 y → probs → restore MSE: 0.000013
+batch 27 y → probs → restore MSE: 0.000002
+batch 28 y → probs → restore MSE: 0.000002
+batch 29 y → probs → restore MSE: 0.000002
+batch 30 y → probs → restore MSE: 0.000002
+batch 31 y → probs → restore MSE: 0.000002
+batch 32 y → probs → restore MSE: 0.000001
+batch 33 y → probs → restore MSE: 0.000002
+batch 34 y → probs → restore MSE: 0.000002
+batch 35 y → probs → restore MSE: 0.000002
+batch 36 y → probs → restore MSE: 0.000002
+batch 37 y → probs → restore MSE: 0.000002
+batch 38 y → probs → restore MSE: 0.000003
+batch 39 y → probs → restore MSE: 0.000003
+batch 40 y → probs → restore MSE: 0.000003
+batch 41 y → probs → restore MSE: 0.000004
+batch 42 y → probs → restore MSE: 0.000003
+batch 43 y → probs → restore MSE: 0.000004
+batch 44 y → probs → restore MSE: 0.000004
+batch 45 y → probs → restore MSE: 0.000003
+batch 46 y → probs → restore MSE: 0.000003
+batch 47 y → probs → restore MSE: 0.000008
+batch 48 y → probs → restore MSE: 0.000005
+batch 49 y → probs → restore MSE: 0.000008
+batch 50 y → probs → restore MSE: 0.000019
+batch 51 y → probs → restore MSE: 0.000025
+batch 52 y → probs → restore MSE: 0.000024
+batch 53 y → probs → restore MSE: 0.000025
+batch 54 y → probs → restore MSE: 0.000018
+batch 55 y → probs → restore MSE: 0.000008
+batch 56 y → probs → restore MSE: 0.000007
+batch 57 y → probs → restore MSE: 0.000007
+batch 58 y → probs → restore MSE: 0.000008
+batch 59 y → probs → restore MSE: 0.000011
+batch 60 y → probs → restore MSE: 0.000014
+batch 61 y → probs → restore MSE: 0.000014
+batch 62 y → probs → restore MSE: 0.000010
+batch 63 y → probs → restore MSE: 0.000011
+batch 64 y → probs → restore MSE: 0.000015
+batch 65 y → probs → restore MSE: 0.000017
+batch 66 y → probs → restore MSE: 0.000018
+batch 67 y → probs → restore MSE: 0.000015
+batch 68 y → probs → restore MSE: 0.000013
+batch 69 y → probs → restore MSE: 0.000011
+batch 70 y → probs → restore MSE: 0.000024
+batch 71 y → probs → restore MSE: 0.000022
+batch 72 y → probs → restore MSE: 0.000022
+batch 73 y → probs → restore MSE: 0.000012
+batch 74 y → probs → restore MSE: 0.000014
+batch 75 y → probs → restore MSE: 0.000016
+batch 76 y → probs → restore MSE: 0.000015
+batch 77 y → probs → restore MSE: 0.000014
+batch 78 y → probs → restore MSE: 0.000011
+batch 79 y → probs → restore MSE: 0.000006
+batch 80 y → probs → restore MSE: 0.000007
+batch 81 y → probs → restore MSE: 0.000003
+batch 82 y → probs → restore MSE: 0.000003
+batch 83 y → probs → restore MSE: 0.000009
+batch 84 y → probs → restore MSE: 0.000013
+mse:0.2480875700712204, mae:0.35168808698654175
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_1>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2689
+>>> Start Training
+Epoch: 1, Steps: 253, Train Loss: 40.86182, Time: 22.12s
+Validation loss decreased (inf --> 40.785591).  Saving model ...
+Epoch: 2, Steps: 253, Train Loss: 39.52562, Time: 22.01s
+EarlyStopping counter: 1 out of 5
+Epoch: 3, Steps: 253, Train Loss: 38.49868, Time: 21.75s
+EarlyStopping counter: 2 out of 5
+Epoch: 4, Steps: 253, Train Loss: 37.53832, Time: 22.38s
+EarlyStopping counter: 3 out of 5
+Epoch: 5, Steps: 253, Train Loss: 36.67262, Time: 22.18s
+EarlyStopping counter: 4 out of 5
+Epoch: 6, Steps: 253, Train Loss: 36.02031, Time: 22.36s
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+batch 0 y → probs → restore MSE: 0.000002
+batch 1 y → probs → restore MSE: 0.000011
+batch 2 y → probs → restore MSE: 0.000019
+batch 3 y → probs → restore MSE: 0.000019
+batch 4 y → probs → restore MSE: 0.000019
+batch 5 y → probs → restore MSE: 0.000019
+batch 6 y → probs → restore MSE: 0.000019
+batch 7 y → probs → restore MSE: 0.000019
+batch 8 y → probs → restore MSE: 0.000019
+batch 9 y → probs → restore MSE: 0.000019
+batch 10 y → probs → restore MSE: 0.000003
+batch 11 y → probs → restore MSE: 0.000002
+batch 12 y → probs → restore MSE: 0.000002
+batch 13 y → probs → restore MSE: 0.000002
+batch 14 y → probs → restore MSE: 0.000002
+batch 15 y → probs → restore MSE: 0.000002
+batch 16 y → probs → restore MSE: 0.000014
+batch 17 y → probs → restore MSE: 0.000013
+batch 18 y → probs → restore MSE: 0.000002
+batch 19 y → probs → restore MSE: 0.000002
+batch 20 y → probs → restore MSE: 0.000011
+batch 21 y → probs → restore MSE: 0.000001
+batch 22 y → probs → restore MSE: 0.000001
+batch 23 y → probs → restore MSE: 0.000006
+batch 24 y → probs → restore MSE: 0.000016
+batch 25 y → probs → restore MSE: 0.000016
+batch 26 y → probs → restore MSE: 0.000013
+batch 27 y → probs → restore MSE: 0.000002
+batch 28 y → probs → restore MSE: 0.000002
+batch 29 y → probs → restore MSE: 0.000002
+batch 30 y → probs → restore MSE: 0.000002
+batch 31 y → probs → restore MSE: 0.000002
+batch 32 y → probs → restore MSE: 0.000001
+batch 33 y → probs → restore MSE: 0.000002
+batch 34 y → probs → restore MSE: 0.000002
+batch 35 y → probs → restore MSE: 0.000002
+batch 36 y → probs → restore MSE: 0.000002
+batch 37 y → probs → restore MSE: 0.000002
+batch 38 y → probs → restore MSE: 0.000003
+batch 39 y → probs → restore MSE: 0.000003
+batch 40 y → probs → restore MSE: 0.000003
+batch 41 y → probs → restore MSE: 0.000004
+batch 42 y → probs → restore MSE: 0.000003
+batch 43 y → probs → restore MSE: 0.000004
+batch 44 y → probs → restore MSE: 0.000004
+batch 45 y → probs → restore MSE: 0.000003
+batch 46 y → probs → restore MSE: 0.000003
+batch 47 y → probs → restore MSE: 0.000008
+batch 48 y → probs → restore MSE: 0.000005
+batch 49 y → probs → restore MSE: 0.000008
+batch 50 y → probs → restore MSE: 0.000019
+batch 51 y → probs → restore MSE: 0.000025
+batch 52 y → probs → restore MSE: 0.000024
+batch 53 y → probs → restore MSE: 0.000025
+batch 54 y → probs → restore MSE: 0.000018
+batch 55 y → probs → restore MSE: 0.000008
+batch 56 y → probs → restore MSE: 0.000007
+batch 57 y → probs → restore MSE: 0.000007
+batch 58 y → probs → restore MSE: 0.000008
+batch 59 y → probs → restore MSE: 0.000011
+batch 60 y → probs → restore MSE: 0.000014
+batch 61 y → probs → restore MSE: 0.000014
+batch 62 y → probs → restore MSE: 0.000010
+batch 63 y → probs → restore MSE: 0.000011
+batch 64 y → probs → restore MSE: 0.000015
+batch 65 y → probs → restore MSE: 0.000017
+batch 66 y → probs → restore MSE: 0.000018
+batch 67 y → probs → restore MSE: 0.000015
+batch 68 y → probs → restore MSE: 0.000013
+batch 69 y → probs → restore MSE: 0.000011
+batch 70 y → probs → restore MSE: 0.000024
+batch 71 y → probs → restore MSE: 0.000022
+batch 72 y → probs → restore MSE: 0.000022
+batch 73 y → probs → restore MSE: 0.000012
+batch 74 y → probs → restore MSE: 0.000014
+batch 75 y → probs → restore MSE: 0.000016
+batch 76 y → probs → restore MSE: 0.000015
+batch 77 y → probs → restore MSE: 0.000014
+batch 78 y → probs → restore MSE: 0.000011
+batch 79 y → probs → restore MSE: 0.000006
+batch 80 y → probs → restore MSE: 0.000007
+batch 81 y → probs → restore MSE: 0.000003
+batch 82 y → probs → restore MSE: 0.000003
+batch 83 y → probs → restore MSE: 0.000009
+batch 84 y → probs → restore MSE: 0.000013
+mse:0.2507982552051544, mae:0.35377511382102966
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_2>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2689
+>>> Start Training
+Epoch: 1, Steps: 253, Train Loss: 40.74604, Time: 21.97s
+Validation loss decreased (inf --> 40.811123).  Saving model ...
+Epoch: 2, Steps: 253, Train Loss: 39.49982, Time: 22.20s
+EarlyStopping counter: 1 out of 5
+Epoch: 3, Steps: 253, Train Loss: 38.40549, Time: 21.88s
+EarlyStopping counter: 2 out of 5
+Epoch: 4, Steps: 253, Train Loss: 37.44818, Time: 22.41s
+EarlyStopping counter: 3 out of 5
+Epoch: 5, Steps: 253, Train Loss: 36.59642, Time: 22.10s
+EarlyStopping counter: 4 out of 5
+Epoch: 6, Steps: 253, Train Loss: 35.91581, Time: 24.55s
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+batch 0 y → probs → restore MSE: 0.000002
+batch 1 y → probs → restore MSE: 0.000011
+batch 2 y → probs → restore MSE: 0.000019
+batch 3 y → probs → restore MSE: 0.000019
+batch 4 y → probs → restore MSE: 0.000019
+batch 5 y → probs → restore MSE: 0.000019
+batch 6 y → probs → restore MSE: 0.000019
+batch 7 y → probs → restore MSE: 0.000019
+batch 8 y → probs → restore MSE: 0.000019
+batch 9 y → probs → restore MSE: 0.000019
+batch 10 y → probs → restore MSE: 0.000003
+batch 11 y → probs → restore MSE: 0.000002
+batch 12 y → probs → restore MSE: 0.000002
+batch 13 y → probs → restore MSE: 0.000002
+batch 14 y → probs → restore MSE: 0.000002
+batch 15 y → probs → restore MSE: 0.000002
+batch 16 y → probs → restore MSE: 0.000014
+batch 17 y → probs → restore MSE: 0.000013
+batch 18 y → probs → restore MSE: 0.000002
+batch 19 y → probs → restore MSE: 0.000002
+batch 20 y → probs → restore MSE: 0.000011
+batch 21 y → probs → restore MSE: 0.000001
+batch 22 y → probs → restore MSE: 0.000001
+batch 23 y → probs → restore MSE: 0.000006
+batch 24 y → probs → restore MSE: 0.000016
+batch 25 y → probs → restore MSE: 0.000016
+batch 26 y → probs → restore MSE: 0.000013
+batch 27 y → probs → restore MSE: 0.000002
+batch 28 y → probs → restore MSE: 0.000002
+batch 29 y → probs → restore MSE: 0.000002
+batch 30 y → probs → restore MSE: 0.000002
+batch 31 y → probs → restore MSE: 0.000002
+batch 32 y → probs → restore MSE: 0.000001
+batch 33 y → probs → restore MSE: 0.000002
+batch 34 y → probs → restore MSE: 0.000002
+batch 35 y → probs → restore MSE: 0.000002
+batch 36 y → probs → restore MSE: 0.000002
+batch 37 y → probs → restore MSE: 0.000002
+batch 38 y → probs → restore MSE: 0.000003
+batch 39 y → probs → restore MSE: 0.000003
+batch 40 y → probs → restore MSE: 0.000003
+batch 41 y → probs → restore MSE: 0.000004
+batch 42 y → probs → restore MSE: 0.000003
+batch 43 y → probs → restore MSE: 0.000004
+batch 44 y → probs → restore MSE: 0.000004
+batch 45 y → probs → restore MSE: 0.000003
+batch 46 y → probs → restore MSE: 0.000003
+batch 47 y → probs → restore MSE: 0.000008
+batch 48 y → probs → restore MSE: 0.000005
+batch 49 y → probs → restore MSE: 0.000008
+batch 50 y → probs → restore MSE: 0.000019
+batch 51 y → probs → restore MSE: 0.000025
+batch 52 y → probs → restore MSE: 0.000024
+batch 53 y → probs → restore MSE: 0.000025
+batch 54 y → probs → restore MSE: 0.000018
+batch 55 y → probs → restore MSE: 0.000008
+batch 56 y → probs → restore MSE: 0.000007
+batch 57 y → probs → restore MSE: 0.000007
+batch 58 y → probs → restore MSE: 0.000008
+batch 59 y → probs → restore MSE: 0.000011
+batch 60 y → probs → restore MSE: 0.000014
+batch 61 y → probs → restore MSE: 0.000014
+batch 62 y → probs → restore MSE: 0.000010
+batch 63 y → probs → restore MSE: 0.000011
+batch 64 y → probs → restore MSE: 0.000015
+batch 65 y → probs → restore MSE: 0.000017
+batch 66 y → probs → restore MSE: 0.000018
+batch 67 y → probs → restore MSE: 0.000015
+batch 68 y → probs → restore MSE: 0.000013
+batch 69 y → probs → restore MSE: 0.000011
+batch 70 y → probs → restore MSE: 0.000024
+batch 71 y → probs → restore MSE: 0.000022
+batch 72 y → probs → restore MSE: 0.000022
+batch 73 y → probs → restore MSE: 0.000012
+batch 74 y → probs → restore MSE: 0.000014
+batch 75 y → probs → restore MSE: 0.000016
+batch 76 y → probs → restore MSE: 0.000015
+batch 77 y → probs → restore MSE: 0.000014
+batch 78 y → probs → restore MSE: 0.000011
+batch 79 y → probs → restore MSE: 0.000006
+batch 80 y → probs → restore MSE: 0.000007
+batch 81 y → probs → restore MSE: 0.000003
+batch 82 y → probs → restore MSE: 0.000003
+batch 83 y → probs → restore MSE: 0.000009
+batch 84 y → probs → restore MSE: 0.000013
+mse:0.24899597465991974, mae:0.3512488603591919
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_3>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2689
+>>> Start Training
+Epoch: 1, Steps: 253, Train Loss: 40.82816, Time: 22.34s
+Validation loss decreased (inf --> 41.209286).  Saving model ...
+Epoch: 2, Steps: 253, Train Loss: 39.56352, Time: 21.99s
+EarlyStopping counter: 1 out of 5
+Epoch: 3, Steps: 253, Train Loss: 38.44887, Time: 22.34s
+EarlyStopping counter: 2 out of 5
+Epoch: 4, Steps: 253, Train Loss: 37.68201, Time: 22.16s
+EarlyStopping counter: 3 out of 5
+Epoch: 5, Steps: 253, Train Loss: 36.63589, Time: 21.84s
+EarlyStopping counter: 4 out of 5
+Epoch: 6, Steps: 253, Train Loss: 35.89154, Time: 22.05s
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_3<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+batch 0 y → probs → restore MSE: 0.000002
+batch 1 y → probs → restore MSE: 0.000011
+batch 2 y → probs → restore MSE: 0.000019
+batch 3 y → probs → restore MSE: 0.000019
+batch 4 y → probs → restore MSE: 0.000019
+batch 5 y → probs → restore MSE: 0.000019
+batch 6 y → probs → restore MSE: 0.000019
+batch 7 y → probs → restore MSE: 0.000019
+batch 8 y → probs → restore MSE: 0.000019
+batch 9 y → probs → restore MSE: 0.000019
+batch 10 y → probs → restore MSE: 0.000003
+batch 11 y → probs → restore MSE: 0.000002
+batch 12 y → probs → restore MSE: 0.000002
+batch 13 y → probs → restore MSE: 0.000002
+batch 14 y → probs → restore MSE: 0.000002
+batch 15 y → probs → restore MSE: 0.000002
+batch 16 y → probs → restore MSE: 0.000014
+batch 17 y → probs → restore MSE: 0.000013
+batch 18 y → probs → restore MSE: 0.000002
+batch 19 y → probs → restore MSE: 0.000002
+batch 20 y → probs → restore MSE: 0.000011
+batch 21 y → probs → restore MSE: 0.000001
+batch 22 y → probs → restore MSE: 0.000001
+batch 23 y → probs → restore MSE: 0.000006
+batch 24 y → probs → restore MSE: 0.000016
+batch 25 y → probs → restore MSE: 0.000016
+batch 26 y → probs → restore MSE: 0.000013
+batch 27 y → probs → restore MSE: 0.000002
+batch 28 y → probs → restore MSE: 0.000002
+batch 29 y → probs → restore MSE: 0.000002
+batch 30 y → probs → restore MSE: 0.000002
+batch 31 y → probs → restore MSE: 0.000002
+batch 32 y → probs → restore MSE: 0.000001
+batch 33 y → probs → restore MSE: 0.000002
+batch 34 y → probs → restore MSE: 0.000002
+batch 35 y → probs → restore MSE: 0.000002
+batch 36 y → probs → restore MSE: 0.000002
+batch 37 y → probs → restore MSE: 0.000002
+batch 38 y → probs → restore MSE: 0.000003
+batch 39 y → probs → restore MSE: 0.000003
+batch 40 y → probs → restore MSE: 0.000003
+batch 41 y → probs → restore MSE: 0.000004
+batch 42 y → probs → restore MSE: 0.000003
+batch 43 y → probs → restore MSE: 0.000004
+batch 44 y → probs → restore MSE: 0.000004
+batch 45 y → probs → restore MSE: 0.000003
+batch 46 y → probs → restore MSE: 0.000003
+batch 47 y → probs → restore MSE: 0.000008
+batch 48 y → probs → restore MSE: 0.000005
+batch 49 y → probs → restore MSE: 0.000008
+batch 50 y → probs → restore MSE: 0.000019
+batch 51 y → probs → restore MSE: 0.000025
+batch 52 y → probs → restore MSE: 0.000024
+batch 53 y → probs → restore MSE: 0.000025
+batch 54 y → probs → restore MSE: 0.000018
+batch 55 y → probs → restore MSE: 0.000008
+batch 56 y → probs → restore MSE: 0.000007
+batch 57 y → probs → restore MSE: 0.000007
+batch 58 y → probs → restore MSE: 0.000008
+batch 59 y → probs → restore MSE: 0.000011
+batch 60 y → probs → restore MSE: 0.000014
+batch 61 y → probs → restore MSE: 0.000014
+batch 62 y → probs → restore MSE: 0.000010
+batch 63 y → probs → restore MSE: 0.000011
+batch 64 y → probs → restore MSE: 0.000015
+batch 65 y → probs → restore MSE: 0.000017
+batch 66 y → probs → restore MSE: 0.000018
+batch 67 y → probs → restore MSE: 0.000015
+batch 68 y → probs → restore MSE: 0.000013
+batch 69 y → probs → restore MSE: 0.000011
+batch 70 y → probs → restore MSE: 0.000024
+batch 71 y → probs → restore MSE: 0.000022
+batch 72 y → probs → restore MSE: 0.000022
+batch 73 y → probs → restore MSE: 0.000012
+batch 74 y → probs → restore MSE: 0.000014
+batch 75 y → probs → restore MSE: 0.000016
+batch 76 y → probs → restore MSE: 0.000015
+batch 77 y → probs → restore MSE: 0.000014
+batch 78 y → probs → restore MSE: 0.000011
+batch 79 y → probs → restore MSE: 0.000006
+batch 80 y → probs → restore MSE: 0.000007
+batch 81 y → probs → restore MSE: 0.000003
+batch 82 y → probs → restore MSE: 0.000003
+batch 83 y → probs → restore MSE: 0.000009
+batch 84 y → probs → restore MSE: 0.000013
+mse:0.25375068187713623, mae:0.3556753993034363
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_4>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2689
+>>> Start Training
+Epoch: 1, Steps: 253, Train Loss: 40.77100, Time: 22.29s
+Validation loss decreased (inf --> 40.814526).  Saving model ...
+Epoch: 2, Steps: 253, Train Loss: 39.53639, Time: 22.20s
+EarlyStopping counter: 1 out of 5
+Epoch: 3, Steps: 253, Train Loss: 38.42673, Time: 21.75s
+EarlyStopping counter: 2 out of 5
+Epoch: 4, Steps: 253, Train Loss: 37.55625, Time: 21.84s
+EarlyStopping counter: 3 out of 5
+Epoch: 5, Steps: 253, Train Loss: 36.73731, Time: 21.97s
+EarlyStopping counter: 4 out of 5
+Epoch: 6, Steps: 253, Train Loss: 35.99603, Time: 21.94s
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : ETTh2_336_192_DLinear_ETTh2_ftM_sl336_pl192_sigma0.01_bins100_lossmse_Exp_4<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+batch 0 y → probs → restore MSE: 0.000002
+batch 1 y → probs → restore MSE: 0.000011
+batch 2 y → probs → restore MSE: 0.000019
+batch 3 y → probs → restore MSE: 0.000019
+batch 4 y → probs → restore MSE: 0.000019
+batch 5 y → probs → restore MSE: 0.000019
+batch 6 y → probs → restore MSE: 0.000019
+batch 7 y → probs → restore MSE: 0.000019
+batch 8 y → probs → restore MSE: 0.000019
+batch 9 y → probs → restore MSE: 0.000019
+batch 10 y → probs → restore MSE: 0.000003
+batch 11 y → probs → restore MSE: 0.000002
+batch 12 y → probs → restore MSE: 0.000002
+batch 13 y → probs → restore MSE: 0.000002
+batch 14 y → probs → restore MSE: 0.000002
+batch 15 y → probs → restore MSE: 0.000002
+batch 16 y → probs → restore MSE: 0.000014
+batch 17 y → probs → restore MSE: 0.000013
+batch 18 y → probs → restore MSE: 0.000002
+batch 19 y → probs → restore MSE: 0.000002
+batch 20 y → probs → restore MSE: 0.000011
+batch 21 y → probs → restore MSE: 0.000001
+batch 22 y → probs → restore MSE: 0.000001
+batch 23 y → probs → restore MSE: 0.000006
+batch 24 y → probs → restore MSE: 0.000016
+batch 25 y → probs → restore MSE: 0.000016
+batch 26 y → probs → restore MSE: 0.000013
+batch 27 y → probs → restore MSE: 0.000002
+batch 28 y → probs → restore MSE: 0.000002
+batch 29 y → probs → restore MSE: 0.000002
+batch 30 y → probs → restore MSE: 0.000002
+batch 31 y → probs → restore MSE: 0.000002
+batch 32 y → probs → restore MSE: 0.000001
+batch 33 y → probs → restore MSE: 0.000002
+batch 34 y → probs → restore MSE: 0.000002
+batch 35 y → probs → restore MSE: 0.000002
+batch 36 y → probs → restore MSE: 0.000002
+batch 37 y → probs → restore MSE: 0.000002
+batch 38 y → probs → restore MSE: 0.000003
+batch 39 y → probs → restore MSE: 0.000003
+batch 40 y → probs → restore MSE: 0.000003
+batch 41 y → probs → restore MSE: 0.000004
+batch 42 y → probs → restore MSE: 0.000003
+batch 43 y → probs → restore MSE: 0.000004
+batch 44 y → probs → restore MSE: 0.000004
+batch 45 y → probs → restore MSE: 0.000003
+batch 46 y → probs → restore MSE: 0.000003
+batch 47 y → probs → restore MSE: 0.000008
+batch 48 y → probs → restore MSE: 0.000005
+batch 49 y → probs → restore MSE: 0.000008
+batch 50 y → probs → restore MSE: 0.000019
+batch 51 y → probs → restore MSE: 0.000025
+batch 52 y → probs → restore MSE: 0.000024
+batch 53 y → probs → restore MSE: 0.000025
+batch 54 y → probs → restore MSE: 0.000018
+batch 55 y → probs → restore MSE: 0.000008
+batch 56 y → probs → restore MSE: 0.000007
+batch 57 y → probs → restore MSE: 0.000007
+batch 58 y → probs → restore MSE: 0.000008
+batch 59 y → probs → restore MSE: 0.000011
+batch 60 y → probs → restore MSE: 0.000014
+batch 61 y → probs → restore MSE: 0.000014
+batch 62 y → probs → restore MSE: 0.000010
+batch 63 y → probs → restore MSE: 0.000011
+batch 64 y → probs → restore MSE: 0.000015
+batch 65 y → probs → restore MSE: 0.000017
+batch 66 y → probs → restore MSE: 0.000018
+batch 67 y → probs → restore MSE: 0.000015
+batch 68 y → probs → restore MSE: 0.000013
+batch 69 y → probs → restore MSE: 0.000011
+batch 70 y → probs → restore MSE: 0.000024
+batch 71 y → probs → restore MSE: 0.000022
+batch 72 y → probs → restore MSE: 0.000022
+batch 73 y → probs → restore MSE: 0.000012
+batch 74 y → probs → restore MSE: 0.000014
+batch 75 y → probs → restore MSE: 0.000016
+batch 76 y → probs → restore MSE: 0.000015
+batch 77 y → probs → restore MSE: 0.000014
+batch 78 y → probs → restore MSE: 0.000011
+batch 79 y → probs → restore MSE: 0.000006
+batch 80 y → probs → restore MSE: 0.000007
+batch 81 y → probs → restore MSE: 0.000003
+batch 82 y → probs → restore MSE: 0.000003
+batch 83 y → probs → restore MSE: 0.000009
+batch 84 y → probs → restore MSE: 0.000013
+mse:0.24413254857063293, mae:0.3491072356700897
+[0m
